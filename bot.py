@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
         try:
             if 'sam' in query:
-                query = query.replace('sam', '')
+                query = query.replace('azeez', '')
                 client = wolframalpha.Client("KWP5TG-5QEK8JA76K") # Paste Your API Key Here....!!!
                 res = client.query(query)
                 ans = next(res.results).text
@@ -51,7 +51,7 @@ if __name__ == "__main__":
         
         except Exception:
             try:
-                query = query.replace('sam', '')
+                query = query.replace('azeez', '')
                 results = wikipedia.summary(query, sentences=2)
                 print(results)
                 speak(results)
